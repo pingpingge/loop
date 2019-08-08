@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="../5段/vue2.6.10.js"></script>
+	<script src="myswiper.js"></script>
+</head>
+<body>
+	<div id="box">
+	<myswiper :list='list'></myswiper>
+	</div>
+</body>
+<script>
+	new Vue({
+		el:"#box",
+		data:{
+			list:["images/1.jpg","images/2.jpg","images/3.jpg","images/4.jpg", ],
+		},
+		components:{
+			myswiper
+		}
+	})
+</script>
+</html>
